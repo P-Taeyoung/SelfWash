@@ -1,0 +1,40 @@
+### 고객 회원가입
+POST http://localhost:8080/signup/customer
+Content-Type: application/json
+
+{
+  "email": "emfprhs105@naver.com",
+  "password": "1234",
+  "phone": "010-1234-1234",
+  "name": "james",
+  "account": "1234-0000-0000"
+}
+
+### 고객 이메일 인증
+GET http://localhost:8080/signup/verify/customer?email=emfprhs105@naver.com&key=f39bcce3-b314-4e61-ae63-3ddfddc5c08a
+
+### 점주 회원가입
+POST http://localhost:8080/signup/owner
+Content-Type: application/json
+
+{
+  "email": "pty10510@gmail.com",
+  "password": "1234",
+  "phone": "010-1234-4567",
+  "name": "mike",
+  "account": "1234-1111-2222"
+}
+
+### 점주 이메일 인증
+GET http://localhost:8080/signup/verify/owner?email=pty10510@gmail.com&key=21326316-cd9f-4702-aac3-e7836e9bd3ea
+
+### 관리자 회원가입
+POST http://localhost:8080/signup/admin
+Content-Type: application/json
+
+{
+  "memberId": "pty10510",
+  "password": "1234",
+  "phone": "010-1111-2222",
+  "name": "tom"
+}
